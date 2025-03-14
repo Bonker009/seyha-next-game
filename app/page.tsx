@@ -58,7 +58,7 @@ export default function HomePage() {
         </Link>
 
         <Link
-          href="/server-components"
+          href="/next-concepts/server-components"
           className="transition-all hover:scale-[1.01]"
         >
           <Card className="h-full">
@@ -86,7 +86,7 @@ export default function HomePage() {
         </Link>
 
         <Link
-          href="/client-components"
+          href="/next-concepts/client-components"
           className="transition-all hover:scale-[1.01]"
         >
           <Card className="h-full">
@@ -168,7 +168,7 @@ export default function HomePage() {
         </Link>
 
         <Link
-          href="/dynamic-data"
+          href="/next-concepts/dynamic-data"
           className="transition-all hover:scale-[1.01]"
         >
           <Card className="h-full">

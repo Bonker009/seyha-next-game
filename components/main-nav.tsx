@@ -3,7 +3,16 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Palette, Home } from "lucide-react";
+import {
+  BookOpen,
+  Palette,
+  Home,
+  Database,
+  BoxIcon,
+  BlocksIcon,
+  MailOpen,
+  MailPlusIcon,
+} from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import { AuroraText } from "./magicui/aurora-text";
 
@@ -17,12 +26,36 @@ export function MainNav() {
       active: pathname === "/",
       icon: <Home className="mr-2 h-4 w-4" />,
     },
-   
+
     {
       href: "/ui-libraries",
       label: "UI Libraries",
       active: pathname === "/ui-libraries",
       icon: <Palette className="mr-2 h-4 w-4" />,
+    },
+    {
+      href: "/data-management",
+      label: "Data Mangement",
+      active: pathname == "/data-management",
+      icon: <Database className="mr-2 h-4 w-4" />,
+    },
+    {
+      href: "/next-concepts",
+      label: "Next Concepts",
+      active: pathname === "/next-concepts",
+      icon: <BoxIcon className="mr-2 h-4 w-4" />,
+    },
+    {
+      href: "/tetris",
+      label: "Tetris",
+      active: pathname === "/tetris",
+      icon: <BlocksIcon className="mr-2 h-4 w-4" />,
+    },
+    {
+      href: "/request-course",
+      label: "Reqest Course",
+      active: pathname === "/request-course",
+      icon: <MailPlusIcon className="mr-2 h-4 w-4" />,
     },
   ];
 

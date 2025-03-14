@@ -31,9 +31,11 @@ export default function RootLayout({
                 <MainNav />
               </div>
             </header>
-            <main className="flex justify-center">{children}</main>
-            <footer className="border-t flex justify-center items-center py-6">
-              <div className="container flex  items-center justify-center gap-4 md:flex-row">
+            <main className="flex-1 flex justify-center w-full">
+              {children}
+            </main>
+            <footer className="border-t flex justify-center items-center py-6 h-14 mt-auto">
+              <div className="container flex items-center justify-center gap-4 md:flex-row">
                 <p className="text-center text-sm text-muted-foreground md:text-left">
                   &copy; {new Date().getFullYear()} Next.js Learning Hub. All
                   rights reserved.

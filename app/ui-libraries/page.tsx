@@ -981,8 +981,8 @@ export default function UILibrariesPage() {
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {uiLibraries.map((library) => (
-          <Card key={library.name} className="flex flex-col h-full">
+        {uiLibraries.map((library, index) => (
+          <Card key={index} className="flex flex-col h-full">
             <CardHeader>
               <div className="flex justify-between items-start">
                 <div>
@@ -1010,7 +1010,7 @@ export default function UILibrariesPage() {
               </div>
             </CardContent>
             <CardFooter>
-              <Button asChild variant="outline" className="w-full">
+              <Button asChild variant="default" className="w-full">
                 <a
                   href={library.url}
                   target="_blank"
